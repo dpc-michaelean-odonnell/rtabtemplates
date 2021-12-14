@@ -1,16 +1,19 @@
 ---
-title: "Report title"
-author: "Recovery Tracking and Analytics Branch (RTAB)"
-subtitle: Social Services Workforce Model
+title: Report title
+author: |
+  | Recovery Tracking and Analytics Branch
+  | DPC
+subtitle: Report subtitle
 output:
-  pdf_document:
+  pdf_document: 
     toc: yes
-    toc_depth: '2'
+    toc_depth: 2
+    latex_engine: lualatex
 mainfont: VIC
 ---
 
 <!-- this latex snippet ensures the table of contents prints correctly -->
-/newpage
+\newpage
 
 ```{r echo = FALSE, message = FALSE, warning = FALSE, results = 'hide'}
 # Any initial set up code should go here. `requirements.r` should contain all
@@ -18,8 +21,6 @@ mainfont: VIC
 # any parameter settings. This chunk will run but nothing will be included in
 # the final document.
 knitr::opts_chunk$set(message = FALSE, warning = FALSE)
-source("./requirements.r")
-source("./parameters.r")
 ```
 
 # Introduction
