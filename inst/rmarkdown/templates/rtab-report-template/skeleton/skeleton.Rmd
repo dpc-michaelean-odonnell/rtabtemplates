@@ -1,0 +1,39 @@
+---
+title: "Report title"
+author: "Recovery Tracking and Analytics Branch (RTAB)"
+subtitle: Social Services Workforce Model
+output:
+  pdf_document:
+    toc: yes
+    toc_depth: '2'
+mainfont: VIC
+---
+
+<!-- this latex snippet ensures the table of contents prints correctly -->
+/newpage
+
+```{r echo = FALSE, message = FALSE, warning = FALSE, results = 'hide'}
+# Any initial set up code should go here. `requirements.r` should contain all
+# of the libraries required to run the code while `parameters.r` should contain
+# any parameter settings. This chunk will run but nothing will be included in
+# the final document.
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+source("./requirements.r")
+source("./parameters.r")
+```
+
+# Introduction
+
+The introduction should contain a brief description of the reports purpose and content, ideally no more than one paragraph.
+
+# Executive summary
+
+The executive summary should be no more than one page. It should be readable as a stand along document, outlining the analysis and key findings of the report.
+
+# Analysis
+
+The analysis section should contain the methodology and results.
+
+# Discussion
+
+The discussion section should discuss the key implications of the results in the analysis section.

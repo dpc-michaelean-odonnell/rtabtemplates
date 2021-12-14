@@ -1,0 +1,4 @@
+name: RTAB report template
+description: >
+   This template should be used when creating PDF RMarkdown reports for RTAB
+create_dir: FALSE
